@@ -131,6 +131,7 @@ function updatecomic() {
 		success: function(data, textStatus, jqXHR){
 			$('#comicdetails').hide();
 			$("li").find("[data-identity='" + $('#comicId').val() + "']").text($('#name').val() +' ('+$('#seriesno').val()+' - '+$('#pubyear').val()+')');
+			$("li").find("[data-identity='" + $('#comicId').val() + "']").attr('class', "bought"+data.bought);
 			alert('comic updated successfully');
 		},
 		error: function(jqXHR, textStatus, errorThrown){
