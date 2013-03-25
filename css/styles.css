@@ -1,0 +1,100 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.header {
+	padding-top: 5px;
+}
+
+.leftArea {
+	position: absolute;
+	left: 10px;
+	top: 70px;
+	bottom: 20px;
+	width: 160px;
+	border:solid 1px #CCCCCC;
+	overflow-y: scroll;
+}
+
+.mainArea {
+	position: absolute;
+	top: 0px;
+	left:0px;
+	padding: 5px;
+	width: 100%;
+	background-clip: padding-box;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.rightArea {
+	position: absolute;
+	top: 70px;
+	bottom: 20px;
+	left:650px;
+	overflow-y: scroll;
+	width:270px;
+}
+
+.bought1 {
+  background-color: #aadda0;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+li a { 
+	text-decoration:none;
+	display: block;
+	color: #000000;
+	border-bottom:solid 1px #CCCCCC;
+	padding: 8px;
+}
+
+li a:hover {
+	background-color: #4B0A1E;
+	color: #BA8A92;
+}
+
+input, textarea {
+  border:1px solid #ccc;
+  min-height:30px;
+  outline: none;
+}
+
+.mainArea input {
+  margin-bottom:5px;
+  margin-top:5px;
+  width:280px;
+}
+
+.formdetails {
+  width:200px;
+  background-color: #333;
+  padding: 5px;
+  color:#fff;
+}
+
+
+textarea {
+	margin-bottom:15px;
+  	margin-top:5px;
+	height: 200px;
+  	width:250px;
+}
+
+label {
+	display:block;
+}
+
+button {
+	padding:6px;
+}
+
+
+#searchKey {
+	width:160px;
+}
