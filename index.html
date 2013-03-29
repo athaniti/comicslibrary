@@ -19,12 +19,30 @@
  	</div>
  	<div data-role="content">
  	
-		
+		<div id="comics"></div>
 		<!--<div class="leftArea">-->
 		<ul data-role="listview" data-insert="true" data-filter="true" id="comicList"></ul>
 		<!--</div>-->
 		
-		<div class="mainArea" id="comics">
+		<div class="mainArea" id="comicdetails">
+		<div class="formdetails">
+		<div style="text-align:right;"><a style="font-size: 1.2em; text-decoration: none;" href="#" onClick="$('#comicdetails').hide();">x</a></div>
+		<form id="comicForm">
+			<input id="comicId" name="comicId" type="text" disabled />
+			<label>Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label>Series:</label>
+			<input type="text" id="series" name="series"/>
+			<label>Series Number:</label>
+			<input type="text" id="seriesno" name="seriesno"/>
+			<label>Year of Publication:</label>
+			<input type="text" id="pubyear" name="pubyear"/>
+			Bought: <input type="checkbox" id="bought" name="bought"/>
+			<br />
+			<button id="btnSave">Save</button>
+			<button id="btnClose">Close</button>
+		</form>
+		</div>
 		</div>
 		
  	
@@ -33,6 +51,7 @@
  
  </div>
  
-
+<script src="js/main.js"></script>
+<script>$('#btnSave').hide();</script>
  </body>
 </html>
