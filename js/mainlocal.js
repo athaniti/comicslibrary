@@ -83,7 +83,8 @@ function syncDB() {
         if(resp.comic.length) localStorage["lastdate"] = Date.UTC(now.getUTCFullYear(),now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds(), now.getUTCMilliseconds());
         //if(resp.comic.length) localStorage["lastdate"] = resp.comic[resp.comic.length-1].timestamp;
 	//if(resp.comic.length) localStorage["lastdate"] = tstamp;
-        displayComics();    
+        displayComics();
+	
     },"json");
 
 }
